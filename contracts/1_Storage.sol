@@ -9,7 +9,7 @@ contract Storage {
         message = str;
     }
     function storePaidMsg(string memory str) public payable {
-        require(msg.value == 0.1 ether, "Not enough fund");
+        require(msg.value == 0.00001 ether, "Error, Not enough fund");
         paidMessage = str;
     }
     function retrievePaidMsg() public view returns (string memory){
